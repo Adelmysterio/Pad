@@ -22,9 +22,12 @@
     z-index: 2;
     width: 35vw;
     aspect-ratio: 1.6;
-    background: radial-gradient(ellipse at top, #272727, black);
-    border-top: 3px solid black;
+    background: radial-gradient(ellipse at top, rgb(51, 51, 51), black);
+    border-top: 7px solid rgb(87, 87, 87);
     border-radius: 22% 22% 0 0;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
 }
 
 .grip {
@@ -37,7 +40,7 @@
     position: absolute;
     left: 12%;
     rotate: 30deg;
-    background: linear-gradient( 45deg, rgb(92, 92, 92), rgb(0, 0, 0) 45%);
+    background: linear-gradient( 59deg, rgb(92, 92, 92), rgb(0, 0, 0) 47%);
 }
 
 .right {
@@ -45,7 +48,7 @@
     position: absolute;
     right: 12%;
     rotate: 330deg;
-    background: linear-gradient( -45deg, rgb(92, 92, 92), rgb(0, 0, 0) 45%);
+    background: linear-gradient( -59deg, rgb(37, 37, 37), rgb(0, 0, 0) 45%);
 }
 
 /* Dorsali */
@@ -59,7 +62,7 @@
 }
 
 .L {
-    background: linear-gradient( 170deg,rgb(0, 0, 0), rgb(99, 99, 99)15%, rgb(0, 0, 0) 60%);
+    background: linear-gradient( 170deg,rgb(0, 0, 0), rgb(0, 0, 0)15%, rgb(65, 65, 65) 60%);
     border-radius: 90% 15px 0 0;
     border-right: 5px solid black;
     top: -6%;
@@ -67,9 +70,34 @@
 }
 
 .R {
-    background: linear-gradient( 190deg,rgb(0, 0, 0), rgb(99, 99, 99)15%, rgb(0, 0, 0) 60%);
+    background: linear-gradient( 190deg,rgb(0, 0, 0), rgb(0, 0, 0)15%, rgb(65, 65, 65) 60%);
     border-radius: 15px 90% 0 0;
     border-left: 5px solid black;
     top: -6%;
     right: 23%;
+}
+
+/* Bottoni */
+
+
+.circle {
+    margin-top: 1.5vw;
+    height: 4vw;
+    aspect-ratio: 1/1;
+    background-color: black;
+    border-radius: 50%;
+    border: 3px solid black;
+}
+
+.small.circle {
+    height: 2vw;
+}
+
+img {
+    width: 100%;
+    height: 100%;
+}
+
+.central-buttons {
+    margin-top: 2vw;
 }
